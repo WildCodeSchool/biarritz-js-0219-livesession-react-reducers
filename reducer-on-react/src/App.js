@@ -2,7 +2,7 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
-// import Switch from "./Switch";
+import Switch from "./Switch";
 
 const initialState = {
   title: "YO",
@@ -99,7 +99,7 @@ class App extends React.Component {
         />
         <Card isFLipped={card.isFLipped} onClick={() => this.flipCard()} />
 
-        {/* <Switch
+        <Switch
           renderOff={setIsOn => (
             <input
               type="checkbox"
@@ -110,7 +110,7 @@ class App extends React.Component {
           renderOn={setIsOn => (
             <div onClick={() => setIsOn(false)}>Je suis sur ON</div>
           )}
-        /> */}
+        />
       </div>
     );
   }
